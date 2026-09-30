@@ -1,0 +1,17 @@
+node_modules/
+dist/
+target/
+release/
+src-tauri/gen/schemas/
+*.log
+
+# Signing material must never be committed.
+*.pfx
+*.p12
+*.cer
+*.key
+*.pem
+*.p8
+*.mobileprovision
+.env
+.env.*

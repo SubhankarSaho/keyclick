@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262a33"/>
+      <stop offset="1" stop-color="#0f1115"/>
+    </linearGradient>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a3a8b2"/>
+      <stop offset="1" stop-color="#666b75"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f7f9"/>
+      <stop offset="1" stop-color="#d3d6dc"/>
+    </linearGradient>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#bg)"/>
+  <rect x="168" y="318" width="432" height="420" rx="96" fill="url(#skirt)"/>
+  <rect x="208" y="338" width="352" height="320" rx="72" fill="url(#top)"/>
+  <rect x="344" y="590" width="80" height="14" rx="7" fill="#b3b8c1"/>
+  <g fill="none" stroke="#5eead4" stroke-width="48" stroke-linecap="round">
+    <path d="M716.6 441 A130 130 0 0 1 716.6 615"/>
+    <path d="M790.9 374.1 A230 230 0 0 1 790.9 681.9" opacity="0.6"/>
+  </g>
+</svg>

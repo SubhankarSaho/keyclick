@@ -1,0 +1,21 @@
+{
+  "id": "retro",
+  "name": "Retro",
+  "description": "8-bit home-computer blips",
+  "normal_keys": [
+    "key01.wav",
+    "key02.wav",
+    "key03.wav",
+    "key04.wav",
+    "key05.wav",
+    "key06.wav",
+    "key07.wav",
+    "key08.wav"
+  ],
+  "release_keys": [],
+  "space": "space.wav",
+  "enter": "enter.wav",
+  "backspace": "backspace.wav",
+  "tab": "tab.wav",
+  "modifier": "modifier.wav"
+}

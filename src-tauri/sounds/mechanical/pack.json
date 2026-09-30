@@ -1,0 +1,26 @@
+{
+  "id": "mechanical",
+  "name": "Mechanical",
+  "description": "Crisp, clicky mechanical switches",
+  "normal_keys": [
+    "key01.wav",
+    "key02.wav",
+    "key03.wav",
+    "key04.wav",
+    "key05.wav",
+    "key06.wav",
+    "key07.wav",
+    "key08.wav"
+  ],
+  "release_keys": [
+    "release01.wav",
+    "release02.wav",
+    "release03.wav",
+    "release04.wav"
+  ],
+  "space": "space.wav",
+  "enter": "enter.wav",
+  "backspace": "backspace.wav",
+  "tab": "tab.wav",
+  "modifier": "modifier.wav"
+}

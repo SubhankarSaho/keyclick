@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KeyClick — make typing sound satisfying. Free, lightweight, offline, private." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:" />
+  <title>KeyClick — Make typing sound satisfying.</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0d0e11; --text:#e9ebef; --muted:#8a909b; --accent:#5eead4; --border:#262a31; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; display:grid; place-items:center; background:radial-gradient(ellipse at top, #1a1d24, var(--bg) 60%);
+      color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif; text-align:center; padding:48px 20px; }
+    .logo { width:88px; height:88px; }
+    h1 { letter-spacing:.3em; font-size:28px; margin:22px 0 8px; }
+    .tagline { font-size:20px; margin:0 0 6px; }
+    .sub { color:var(--muted); margin:0 0 36px; }
+    .downloads { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    a.btn { display:inline-block; min-width:220px; padding:14px 22px; border-radius:12px; text-decoration:none; font-weight:600;
+      border:1px solid var(--border); color:var(--text); background:#15171c; }
+    a.btn.primary { background:var(--accent); color:#06201c; border-color:var(--accent); }
+    .features { display:flex; gap:28px; justify-content:center; margin:40px 0 0; padding:0; list-style:none; color:var(--muted); }
+    .features li::before { content:"● "; color:var(--accent); font-size:10px; vertical-align:middle; }
+    .note { color:var(--muted); font-size:13px; margin-top:28px; }
+    .note a { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <svg class="logo" viewBox="0 0 1024 1024" aria-hidden="true">
+      <rect x="64" y="64" width="896" height="896" rx="200" fill="#1c1f26"/>
+      <rect x="168" y="318" width="432" height="420" rx="96" fill="#80858f"/>
+      <rect x="208" y="338" width="352" height="320" rx="72" fill="#eceef1"/>
+      <g fill="none" stroke="#5eead4" stroke-width="48" stroke-linecap="round">
+        <path d="M716.6 441 A130 130 0 0 1 716.6 615"/>
+        <path d="M790.9 374.1 A230 230 0 0 1 790.9 681.9" opacity=".6"/>
+      </g>
+    </svg>
+    <h1>KEYCLICK</h1>
+    <p class="tagline">Make typing sound satisfying.</p>
+    <p class="sub">Your keyboard. Your sound.</p>
+
+    <div class="downloads">
+      <a class="btn" id="win" href="downloads/KeyClick-Setup.exe" download>Download for Windows</a>
+      <a class="btn" id="mac" href="downloads/KeyClick.dmg" download>Download for macOS</a>
+    </div>
+
+    <ul class="features">
+      <li>Free.</li><li>Lightweight.</li><li>Offline.</li><li>Private.</li>
+    </ul>
+
+    <p class="note">
+      Windows 10/11 · macOS 10.15+ (Apple Silicon &amp; Intel) · KeyClick never records what you type.
+    </p>
+  </main>
+  <script>
+    // Highlight the visitor's platform; both links always stay available.
+    const p = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent;
+    const id = /mac/i.test(p) ? 'mac' : /win/i.test(p) ? 'win' : null;
+    if (id) {
+      const el = document.getElementById(id);
+      el.classList.add('primary');
+      el.parentElement.prepend(el);
+    }
+  </script>
+</body>
+</html>
